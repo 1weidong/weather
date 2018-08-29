@@ -56,7 +56,6 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
-        console.log(res)
         var future = res.data.data.forecast;
         var todayInfo = future.shift();
         var today = res.data.data;
